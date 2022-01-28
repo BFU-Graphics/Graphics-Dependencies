@@ -34,15 +34,15 @@ turn ON any dependencies you want to install, vise versa.
 
 click <u>Build</u> -> <u>Build All in Release</u>
 
-![image-20220128145037684](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220128145037684.png)
+![image-20220128145037684](./img/image-20220128145037684.png)
 
 ### Step 5 (optional): Append Wanted Dependencies
 
 You're able to append dependencies that are originally turnned off by
 
 1. turn on the option(s)
-2. switch build target![image-20220128144923908](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220128144923908.png)
-3. individually build![image-20220128145018811](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220128145018811.png)
+2. switch build target![image-20220128144923908](./img/image-20220128144923908.png)
+3. individually build![image-20220128145018811](./img/image-20220128145018811.png)
 
 ## Futher
 
