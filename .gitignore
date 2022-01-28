@@ -1,0 +1,11 @@
+# clion file
+.idea
+cmake-build-debug
+cmake-build-release
+
+# mac file
+.DS_Store
+
+# external depebdencies
+external
+install
