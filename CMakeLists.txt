@@ -21,6 +21,9 @@ option(INSTALL_GLM "INSTALL GLM" ON)
 option(INSTALL_ASSIMP "INSTALL ASSIMP" ON)
 option(INSTALL_STB "INSTALL STB" ON)
 option(INSTALL_LIBIGL "INSTALL LIBIGL" OFF)
+option(INSTALL_BOX2D "INSTALL BOX2D" OFF)
+option(INSTALL_EIGEN "INSTALL EIGEN" OFF)
+option(INSTALL_DISCREGRID "INSTALL DISCREGRID" OFF)
 
 # Installing Field
 include(ExternalProject)
@@ -47,4 +50,16 @@ endif ()
 
 if (INSTALL_LIBIGL)
     include(cmake/install_libigl.cmake)
+endif ()
+
+if (INSTALL_BOX2D)
+    include(cmake/install_box2d.cmake)
+endif ()
+
+if (INSTALL_EIGEN)
+    include(cmake/install_eigen.cmake)
+endif ()
+
+if (INSTALL_DISCREGRID)
+    include(cmake/install_Discregrid.cmake)
 endif ()
