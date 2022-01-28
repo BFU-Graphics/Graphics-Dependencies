@@ -6,7 +6,7 @@ option(ASSIMP_NO_EXPORT ON)
 option(ASSIMP_BUILD_ALL_IMPORTERS_BY_DEFAULT OFF)
 ExternalProject_Add(
         assimp
-        GIT_REPOSITORY ${LINK_HEADER}github.com/assimp/assimp.git
+        GIT_REPOSITORY ${LINK_HEADER}github.com${SEPARATE_FLAG}assimp/assimp.git
         GIT_TAG a214b0833f368d665f25d296385966bbc13a796b
         CMAKE_ARGS
             -DCMAKE_INSTALL_PREFIX=${EXTERNAL_INSTALL_DIR}

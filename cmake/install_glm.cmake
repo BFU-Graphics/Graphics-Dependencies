@@ -2,7 +2,7 @@ option(BUILD_STATIC_LIBS ON)
 option(BUILD_SHARED_LIBS OFF)
 ExternalProject_Add(
         glm
-        GIT_REPOSITORY ${LINK_HEADER}github.com/g-truc/glm.git
+        GIT_REPOSITORY ${LINK_HEADER}github.com${SEPARATE_FLAG}g-truc/glm.git
         GIT_TAG 6ad79aae3eb5bf809c30bf1168171e9e55857e45
         CMAKE_ARGS
         -DCMAKE_INSTALL_PREFIX=${EXTERNAL_INSTALL_DIR}

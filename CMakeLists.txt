@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.15)
 project(Graphics-Dependencies)
 option(USE_GIT_URL "" OFF)
 if (USE_GIT_URL)
@@ -20,7 +20,7 @@ option(INSTALL_GLAD "INSTALL GLAD" ON)
 option(INSTALL_GLM "INSTALL GLM" ON)
 option(INSTALL_ASSIMP "INSTALL ASSIMP" ON)
 option(INSTALL_STB "INSTALL STB" ON)
-option(INSTALL_LIBIGL "INSTALL LIBIGL" OFF)
+option(INSTALL_LIBIGL "INSTALL LIBIGL" ON)
 
 # Installing Field
 include(ExternalProject)

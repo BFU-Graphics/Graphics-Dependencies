@@ -1,6 +1,6 @@
 ExternalProject_Add(
         stb
-        GIT_REPOSITORY ${LINK_HEADER}github.com/nothings/stb.git
+        GIT_REPOSITORY ${LINK_HEADER}github.com${SEPARATE_FLAG}nothings/stb.git
         GIT_TAG af1a5bc352164740c1cc1354942b1c6b72eacb8a
         CONFIGURE_COMMAND ""
         BUILD_COMMAND ""
