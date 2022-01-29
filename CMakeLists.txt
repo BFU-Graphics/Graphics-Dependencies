@@ -20,11 +20,11 @@ option(INSTALL_GLAD "INSTALL GLAD" ON) # All OK with global proxy
 option(INSTALL_GLM "INSTALL GLM" ON) # All OK
 option(INSTALL_ASSIMP "INSTALL ASSIMP" ON) # All OK
 option(INSTALL_STB "INSTALL STB" ON) # All OK
-option(INSTALL_LIBIGL "INSTALL LIBIGL" ON) # All OK but arm-arch(M1 Mac)
+option(INSTALL_LIBIGL "INSTALL LIBIGL" OFF) # All OK but arm-arch(M1 Mac)
 option(INSTALL_BOX2D "INSTALL BOX2D" ON) # All OK
 option(INSTALL_EIGEN "INSTALL EIGEN" ON) # All OK
 option(INSTALL_DISCREGRID "INSTALL DISCREGRID" ON) # Win OK, [Important] make sure EIGEN was installed ahead.
-option(INSTALL_OPENCV "INSTALL OPENCV" ON) # Win OK, Not Fully Tested
+option(INSTALL_OPENCV "INSTALL OPENCV" ON) # ALL OK
 
 # Installing Field
 include(ExternalProject)
