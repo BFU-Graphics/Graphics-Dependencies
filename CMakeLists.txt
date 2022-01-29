@@ -20,10 +20,11 @@ option(INSTALL_GLAD "INSTALL GLAD" ON) # All OK with global proxy
 option(INSTALL_GLM "INSTALL GLM" ON) # All OK
 option(INSTALL_ASSIMP "INSTALL ASSIMP" ON) # All OK
 option(INSTALL_STB "INSTALL STB" ON) # All OK
-option(INSTALL_LIBIGL "INSTALL LIBIGL" OFF) # All OK but arm-arch(M1 Mac)
-option(INSTALL_BOX2D "INSTALL BOX2D" OFF) # All OK
+option(INSTALL_LIBIGL "INSTALL LIBIGL" ON) # All OK but arm-arch(M1 Mac)
+option(INSTALL_BOX2D "INSTALL BOX2D" ON) # All OK
 option(INSTALL_EIGEN "INSTALL EIGEN" ON) # All OK
-option(INSTALL_DISCREGRID "INSTALL DISCREGRID" OFF) # Win OK, make sure EIGEN was installed ahead ( Not Fully Tested )
+option(INSTALL_DISCREGRID "INSTALL DISCREGRID" ON) # Win OK, [Important] make sure EIGEN was installed ahead.
+option(INSTALL_OPENCV "INSTALL OPENCV" ON) # Win OK, Not Fully Tested
 
 # Installing Field
 include(ExternalProject)
@@ -62,4 +63,8 @@ endif ()
 
 if (INSTALL_DISCREGRID)
     include(cmake/install_Discregrid.cmake)
+endif ()
+
+if (INSTALL_OPENCV)
+    include(cmake/install_opencv.cmake)
 endif ()

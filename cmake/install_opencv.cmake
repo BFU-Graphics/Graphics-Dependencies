@@ -1,0 +1,12 @@
+ExternalProject_Add(opencv
+        GIT_REPOSITORY ${LINK_HEADER}github.com${SEPARATE_FLAG}opencv/opencv.git
+        GIT_TAG 9e3ba487fa380f5d8732389df0934f0f368d4659
+        CMAKE_ARGS
+        -DCMAKE_INSTALL_PREFIX=${EXTERNAL_INSTALL_DIR}
+        -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
+        -DBUILD_DOCS=OFF
+        -DBUILD_EXAMPLES=OFF
+        -DBUILD_SHARED_LIBS=OFF
+        -DBUILD_TESTS=OFF
+        PREFIX ${EXTERNAL_PREFIX}/opencv
+        )
